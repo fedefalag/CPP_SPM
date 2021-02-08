@@ -1,6 +1,6 @@
 ## Instructions
 
-This demo contains two `.m` files and a `.json` file in the `models` folder.
+This demo contains two `.m` files and a `models` folder containing one `.json` file.
 
 Running `MoAEpilot_run.m` performs the following steps:
 
@@ -15,11 +15,10 @@ Running `MoAEpilot_run.m` performs the following steps:
 
 - Smoothed (default FWHM is set to 6mm)
 
-- Quality analysis is performed:
-
-    -   for anatomical data
-    -   for functional data
+- Quality analysis is performed for the anatomical data
 
 - GLM at the subject level is performed
 
-- The contrast defined in the `model-MoAE_smdl.json` file is performed: Listening < baseline
+- The contrast defined in the `model-MoAE_smdl.json` file is performed: `listening < baseline`
+
+All processed data will be found in a `derivatives` folder, created in the cd
