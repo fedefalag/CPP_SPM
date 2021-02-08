@@ -1,10 +1,10 @@
 ## Instructions
 
-This demo contains two `.m` files and a `models` folder containing one `.json` file.
+This demo contains two `.m` files and a `models` folder with one `.json` file.
 
 Running `MoAEpilot_run.m` performs the following steps:
 
-- The data of `sub-01` is downloaded in the cd in bids format from http://www.fil.ion.ucl.ac.uk/spm/download/data/MoAEpilot/ and unzipped
+- The data of `sub-01` is downloaded in the current directory from http://www.fil.ion.ucl.ac.uk/spm/download/data/MoAEpilot/MoAEpilot.bids.zip and unzipped
 
 - The data is slice timing corrected,
 
@@ -15,10 +15,10 @@ Running `MoAEpilot_run.m` performs the following steps:
 
 - Smoothed (default FWHM is set to 6mm)
 
-- Quality analysis is performed for the anatomical data
+- Quality analysis for the anatomical data
 
-- GLM at the subject level is performed
+- GLM at the subject level
 
 - The contrast defined in the `model-MoAE_smdl.json` file is performed: `listening < baseline`
 
-All processed data will be found in a `derivatives` folder, created in the cd
+All processed data will be found in a `derivatives` folder, created in the current directory.
